@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDoApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h2>Got something To Do?</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" id="input" name="" required="" />
+            <label>Enter your task</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="comments" name="" required="" />
+            <label>Add details</label>
+          </div>
+          <a id="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+      <img src="./images/image.svg" class="bgimg" alt="some" />
+    </div>
+
+    <div class="container-mobile">
+      <div class="login-box">
+        <h2>Got something To Do?</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" id="input-mobile" name="" required="" />
+            <label>Enter your task</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="comments-mobile" name="" required="" />
+            <label>Add details</label>
+          </div>
+          <a id="btn-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <div class="filter" id="filter-bar">
+        <h3>Filter tasks</h3>
+        <button class="button" id="all-btn">
+          All
+        </button>
+        <button class="button" id="active-btn">
+          Active
+        </button>
+        <button class="button" id="completed-btn">
+          Completed
+        </button>
+        
+    </div>
+
+    <div id="msg"></div>
+
+    <div class="line"></div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>ToDo</span>App</h1>
+          <p>
+            This is a simple todo app made using HTML, CSS and JavaScript.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="localStorage.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
